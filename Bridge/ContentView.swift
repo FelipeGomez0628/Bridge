@@ -9,6 +9,9 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    
+    @ObservedObject private var viewModel = userViewModel()
+    
     @Environment(\.managedObjectContext) private var viewContext
     
     @FetchRequest(
@@ -18,14 +21,16 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                
-                
-                
-                
-                
-            }
-            Text("Select an item")
+            List(viewModel.users) { user in
+                VStack(alignment: .leading) {
+                    Text(user.name).font(.title)
+                    Text(user.surname).font(.subheadline)
+                }
+            }.navigationTitle("User")
+                .onAppear() {
+                    self.viewModel.fetchData()
+                }
+           
         }
     }
     

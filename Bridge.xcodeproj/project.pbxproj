@@ -44,6 +44,8 @@
 		02C7C1AA28EA024800E97FAB /* BridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C7C1A928EA024800E97FAB /* BridgeTests.swift */; };
 		02C7C1B428EA024800E97FAB /* BridgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C7C1B328EA024800E97FAB /* BridgeUITests.swift */; };
 		02C7C1B628EA024800E97FAB /* BridgeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C7C1B528EA024800E97FAB /* BridgeUITestsLaunchTests.swift */; };
+		02D25DCD28EE121000AD29B8 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D25DCC28EE121000AD29B8 /* user.swift */; };
+		02D25DD228EE167600AD29B8 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D25DD128EE167600AD29B8 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		02C7C1AF28EA024800E97FAB /* BridgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BridgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C7C1B328EA024800E97FAB /* BridgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeUITests.swift; sourceTree = "<group>"; };
 		02C7C1B528EA024800E97FAB /* BridgeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02D25DCC28EE121000AD29B8 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
+		02D25DD128EE167600AD29B8 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,8 @@
 		02C7C19228EA024500E97FAB /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
+				02D25DCE28EE124100AD29B8 /* ViewModels */,
+				02D25DCB28EE120000AD29B8 /* Models */,
 				02C7C19328EA024500E97FAB /* BridgeApp.swift */,
 				02C7C19528EA024500E97FAB /* ContentView.swift */,
 				02C7C19728EA024800E97FAB /* Assets.xcassets */,
@@ -188,6 +194,22 @@
 				02C7C1B528EA024800E97FAB /* BridgeUITestsLaunchTests.swift */,
 			);
 			path = BridgeUITests;
+			sourceTree = "<group>";
+		};
+		02D25DCB28EE120000AD29B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02D25DCC28EE121000AD29B8 /* user.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		02D25DCE28EE124100AD29B8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				02D25DD128EE167600AD29B8 /* File.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +375,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D25DCD28EE121000AD29B8 /* user.swift in Sources */,
+				02D25DD228EE167600AD29B8 /* File.swift in Sources */,
 				02C7C1A028EA024800E97FAB /* Bridge.xcdatamodeld in Sources */,
 				02C7C19D28EA024800E97FAB /* Persistence.swift in Sources */,
 				02C7C19628EA024500E97FAB /* ContentView.swift in Sources */,
